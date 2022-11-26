@@ -1,0 +1,81 @@
+.home{
+    height: 820px;
+    .hero{
+        height: 820px;
+        width: 100%;
+        background-image: linear-gradient(rgba(242, 92, 84,.6),rgba(242, 92, 84,.6)), url(../images/hero.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        .hero-container{
+            position: absolute;
+            width: 500px;
+            // background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 450px;
+            margin-top: 250px;
+            .small-callout{
+                position: absolute;
+                background-color: #FCBCB8;
+                height:168px;
+                width: 168px;
+                border-radius: 200px;
+                margin-bottom: 260px;
+                margin-left: 320px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .small-description{
+                    height: 37px;
+                    width: 105px;
+                    font-size: 10px;
+                    font-family: Lato-I;
+                    text-align:center;
+                }
+            }
+            .main-callout{
+                position: relative;
+                background-color: #FFD972;
+                height:358px;
+                width: 358px;
+                border-radius: 200px;
+                margin-right: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .callout-container{
+                    
+                    .title{
+                        // background-color: darkgray;
+                        width: 170px;
+                        height: 60px;
+                        font-size: 24px;
+                        font-family: Caveat-B;
+                        letter-spacing: 2.5px;
+                        margin: 0 auto;
+                    }
+                    .callout-description{
+                        width: 164px;
+                        // background-color: bisque;
+                        margin: 0 auto;
+                        font-size: 13px;
+                        font-family: Lato-R;
+                        letter-spacing: 1.3px;
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+        .footer-container{
+            height: 800px;
+            // background-color: aquamarine;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        
+    }
+}

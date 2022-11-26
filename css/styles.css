@@ -1,0 +1,1024 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Caveat-R;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Caveat-B;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-I;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: Lato-R;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+nav {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+}
+nav .logo {
+  width: 330px;
+  height: 80px;
+  background-image: url(../images/jungleCookLogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 30px;
+}
+nav .links {
+  height: 50px;
+  width: 700px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav .links a {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+}
+nav .links a .nav-login {
+  height: 52px;
+  width: 168px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.home {
+  height: 820px;
+}
+.home .hero {
+  height: 820px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 92, 84, 0.6)), to(rgba(242, 92, 84, 0.6))), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home .hero .hero-container {
+  position: absolute;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 450px;
+  margin-top: 250px;
+}
+.home .hero .hero-container .small-callout {
+  position: absolute;
+  background-color: #FCBCB8;
+  height: 168px;
+  width: 168px;
+  border-radius: 200px;
+  margin-bottom: 260px;
+  margin-left: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .hero .hero-container .small-callout .small-description {
+  height: 37px;
+  width: 105px;
+  font-size: 10px;
+  font-family: Lato-I;
+  text-align: center;
+}
+.home .hero .hero-container .main-callout {
+  position: relative;
+  background-color: #FFD972;
+  height: 358px;
+  width: 358px;
+  border-radius: 200px;
+  margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .hero .hero-container .main-callout .callout-container .title {
+  width: 170px;
+  height: 60px;
+  font-size: 24px;
+  font-family: Caveat-B;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+}
+.home .hero .hero-container .main-callout .callout-container .callout-description {
+  width: 164px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: Lato-R;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+.home .hero .footer-container {
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .copyright {
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: Lato-I;
+  color: black;
+}
+footer .footer-links {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .footer-links a {
+  font-size: 15px;
+  font-family: Lato-I;
+  text-decoration: none;
+  color: black;
+}
+footer .social-icons {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 50px;
+}
+footer .social-icons .fb-icon {
+  height: 19px;
+  width: 19px;
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .social-icons .insta-icon {
+  height: 19px;
+  width: 19px;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.browse {
+  height: 1000px;
+}
+.browse .browse-hero {
+  height: 1000px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(167, 232, 189, 0.6)), to(rgba(167, 232, 189, 0.6))), url(../images/recipe-hero.jpg);
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(167, 232, 189);
+}
+.browse .browse-hero .browse-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container {
+  height: 650px;
+  width: 1100px;
+  margin-left: 50px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-title {
+  height: 32px;
+  width: 300px;
+  color: black;
+  font-size: 25px;
+  font-family: Caveat-B;
+  letter-spacing: 2.5px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container {
+  height: 610px;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe {
+  height: 263px;
+  width: 524px;
+  margin-top: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-pic img {
+  height: 263px;
+  width: 300px;
+  border-radius: 24px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content {
+  background-color: #FFFFFF;
+  height: 263px;
+  width: 224px;
+  border-radius: 24px;
+  padding-top: 30px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-title {
+  height: 20px;
+  width: 118px;
+  font-size: 15px;
+  font-family: Lato-R;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid black;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-description {
+  height: 60px;
+  width: 138px;
+  font-size: 9px;
+  font-family: Lato-R;
+  color: black;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-time {
+  height: 24px;
+  width: 110px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-time .time-icon {
+  background-image: url(../images/time.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-time .time {
+  height: 18px;
+  width: 114px;
+  font-size: 10px;
+  font-family: Lato-R;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-servings {
+  height: 24px;
+  width: 110px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-servings .servings-icon {
+  background-image: url(../images/servings.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.browse .browse-hero .browse-hero-container .browse-content-container .browse-gallery-container .recipe .recipe-content .recipe-servings .servings {
+  height: 18px;
+  width: 114px;
+  font-size: 10px;
+  font-family: Lato-R;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.browse .browse-hero .footer-container {
+  height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.login {
+  height: 820px;
+}
+.login .login-hero {
+  height: 820px;
+  width: 100%;
+  background-color: #FFD972;
+}
+.login .login-hero .login-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login .login-hero .login-hero-container .login-content-container {
+  height: 460px;
+  width: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login .login-hero .login-hero-container .login-content-container .login-form {
+  width: 210px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login .login-hero .login-hero-container .login-content-container .login-form .login-title {
+  width: 189px;
+  height: 36px;
+  font-size: 30px;
+  font-family: Lato-R;
+  letter-spacing: 3px;
+  margin: 0 auto;
+}
+.login .login-hero .login-hero-container .login-content-container .login-form input {
+  width: 210px;
+  height: 20px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 12px;
+  font-family: Lato-R;
+}
+.login .login-hero .login-hero-container .login-content-container .login-form .login-button {
+  height: 52px;
+  width: 168px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  font-size: 25px;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+}
+.login .login-hero .login-hero-container .login-content-container .signup-form {
+  width: 250px;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login .login-hero .login-hero-container .login-content-container .signup-form .no-account {
+  width: 140px;
+  height: 15px;
+  font-size: 12px;
+  font-family: Lato-I;
+  letter-spacing: 1.2px;
+  margin-top: 15px;
+}
+.login .login-hero .login-hero-container .login-content-container .signup-form .signup-title {
+  width: 135px;
+  height: 36px;
+  font-size: 30px;
+  font-family: Lato-R;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+.login .login-hero .login-hero-container .login-content-container .signup-form input {
+  width: 250px;
+  height: 20px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 12px;
+  font-family: Lato-R;
+}
+.login .login-hero .login-hero-container .login-content-container .signup-form .signup-button {
+  height: 52px;
+  width: 168px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  font-size: 25px;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+}
+.login .login-hero .footer-container {
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.create {
+  height: 1687px;
+}
+.create .create-hero {
+  height: 1687px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.create .create-hero .create-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1687px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.create .create-hero .create-hero-container .create-content-container {
+  height: 1400px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.create .create-hero .create-hero-container .create-content-container .create-title {
+  font-family: Caveat-B;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+.create .create-hero .create-hero-container .create-content-container input {
+  width: 980px;
+  height: 30px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-family: Lato-R;
+}
+.create .create-hero .create-hero-container .create-content-container .enter-ingredients {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.create .create-hero .create-hero-container .create-content-container .enter-instructions {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.create .create-hero .create-hero-container .create-content-container .createRecipe {
+  height: 52px;
+  width: 422px;
+  background-color: #EFA7A7;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  font-size: 25px;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.create .create-hero .footer-container {
+  height: 1667px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.edit {
+  height: 1687px;
+}
+.edit .edit-hero {
+  height: 1687px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.edit .edit-hero .edit-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1687px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container {
+  height: 1400px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container .edit-title {
+  font-family: Caveat-B;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container input {
+  width: 980px;
+  height: 30px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-family: Lato-R;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container .edit-ingredients {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container .edit-instructions {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.edit .edit-hero .edit-hero-container .edit-content-container .editRecipe {
+  height: 52px;
+  width: 422px;
+  background-color: #EFA7A7;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  font-size: 25px;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.edit .edit-hero .footer-container {
+  height: 1667px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.your-recipes {
+  height: 1000px;
+}
+.your-recipes .your-recipes-hero {
+  height: 1000px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(167, 232, 189, 0.6)), to(rgba(167, 232, 189, 0.6))), url(../images/recipe-hero.jpg);
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(167, 232, 189);
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container {
+  height: 650px;
+  width: 1100px;
+  margin-left: 50px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-title {
+  height: 32px;
+  width: 400px;
+  color: black;
+  font-size: 25px;
+  font-family: Caveat-B;
+  letter-spacing: 2.5px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container {
+  height: 610px;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe {
+  height: 263px;
+  width: 524px;
+  margin-top: 50px;
+  padding-right: 50px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-pic img {
+  height: 263px;
+  width: 300px;
+  border-radius: 24px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content {
+  background-color: #FFFFFF;
+  height: 263px;
+  width: 224px;
+  border-radius: 24px;
+  padding-top: 30px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-title {
+  height: 20px;
+  width: 118px;
+  font-size: 15px;
+  font-family: Lato-R;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid black;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-description {
+  height: 60px;
+  width: 138px;
+  font-size: 9px;
+  font-family: Lato-R;
+  color: black;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-time {
+  height: 24px;
+  width: 110px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-time .time-icon {
+  background-image: url(../images/time.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-time .time {
+  height: 18px;
+  width: 114px;
+  font-size: 10px;
+  font-family: Lato-R;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-servings {
+  height: 24px;
+  width: 110px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-servings .servings-icon {
+  background-image: url(../images/servings.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe .recipe-container .recipe-content .recipe-servings .servings {
+  height: 18px;
+  width: 114px;
+  font-size: 10px;
+  font-family: Lato-R;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.your-recipes .your-recipes-hero .your-recipes-hero-container .your-recipes-content-container .your-recipes-gallery-container .recipe button {
+  height: 25px;
+  width: 90px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  margin-left: 10px;
+}
+.your-recipes .your-recipes-hero .footer-container {
+  height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.recipe-view {
+  height: 1362px;
+}
+.recipe-view .recipe-view-hero {
+  height: 1362px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1362px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container {
+  height: 1100px;
+  width: 1050px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts {
+  height: 420px;
+  width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .view-title {
+  width: 35px;
+  height: 421px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .view-title p {
+  position: absolute;
+  width: 300px;
+  right: 1080px;
+  top: 280px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 25px;
+  font-family: Lato-R;
+  letter-spacing: 5px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts img {
+  width: 468px;
+  height: 421px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container {
+  width: 545px;
+  height: 421px;
+  padding-left: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .description-title {
+  font-size: 25px;
+  font-family: Lato-R;
+  letter-spacing: 5px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .full-description {
+  width: 455px;
+  font-size: 20px;
+  font-family: Caveat-R;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .total-time-title {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .total-time {
+  font-size: 20px;
+  font-family: Caveat-R;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .servings-title {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .title-pic-facts .facts-container .total-servings {
+  font-size: 20px;
+  font-family: Caveat-R;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .ingredients-list {
+  height: 300px;
+  width: 1050px;
+  padding-left: 35px;
+  margin-top: 50px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .ingredients-list .ingredients-list-title {
+  font-size: 25px;
+  font-family: Lato-R;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .ingredients-list .ingredient {
+  font-size: 20px;
+  font-family: Caveat-R;
+  letter-spacing: 4px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .instructions-list {
+  height: 300px;
+  width: 1050px;
+  padding-left: 35px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .instructions-list .instructions-list-title {
+  font-size: 25px;
+  font-family: Lato-R;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container .instructions-list .instruction {
+  font-size: 20px;
+  font-family: Caveat-R;
+  letter-spacing: 4px;
+}
+.recipe-view .recipe-view-hero .recipe-view-hero-container .recipe-view-content-container button {
+  height: 42px;
+  width: 127px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  margin-left: 35px;
+}
+.recipe-view .recipe-view-hero .footer-container {
+  height: 1342px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}

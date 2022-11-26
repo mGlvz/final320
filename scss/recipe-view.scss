@@ -1,0 +1,138 @@
+.recipe-view{
+    height: 1362px;
+    .recipe-view-hero{
+        height: 1362px;
+        width: 100%;
+        background-color: #FFFFFF;
+        .recipe-view-hero-container{
+            position: absolute;
+            width: 100%;
+            height: 1362px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .recipe-view-content-container{
+                // background-color: antiquewhite;
+                height: 1100px;
+                width: 1050px;
+                .title-pic-facts{
+                    // background-color: cadetblue;
+                    height: 420px;
+                    width: 1050px;
+                    display: flex;
+                    .view-title{
+                        width: 35px;
+                        height: 421px;
+                        p{
+                            position: absolute;
+                            width: 300px;
+                            right: 1080px;
+                            top: 280px;
+                            transform: rotate(-90deg);
+                            font-size: 25px;
+                            font-family: Lato-R;
+                            letter-spacing: 5px;
+                        }
+                        
+                    }
+                    img{
+                       width: 468px;
+                       height: 421px; 
+                    }
+                    .facts-container{
+                        // background-color: darkgreen;
+                        width: 545px;
+                        height: 421px;
+                        padding-left: 30px;
+                        .description-title{
+                            font-size: 25px;
+                            font-family: Lato-R;
+                            letter-spacing: 5px;
+                        }
+                        .full-description{
+                            width: 455px;
+                            font-size: 20px;
+                            font-family: Caveat-R;
+                            letter-spacing: 4px;
+                            margin-top: 30px;
+                        }
+                        .total-time-title{
+                            font-size: 20px;
+                            font-family: Lato-R;
+                            letter-spacing: 4px;
+                            margin-top: 30px;
+                        }
+                        .total-time{
+                            font-size: 20px;
+                            font-family: Caveat-R;
+                            letter-spacing: 4px;
+                            margin-top: 30px;
+                        }
+                        .servings-title{
+                            font-size: 20px;
+                            font-family: Lato-R;
+                            letter-spacing: 4px;
+                            margin-top: 30px;
+                        }
+                        .total-servings{
+                            font-size: 20px;
+                            font-family: Caveat-R;
+                            letter-spacing: 4px;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                .ingredients-list{
+                    // background-color:cornflowerblue;
+                    height: 300px;
+                    width: 1050px;
+                    padding-left: 35px;
+                    margin-top: 50px;
+                    .ingredients-list-title{
+                        font-size: 25px;
+                        font-family: Lato-R;
+                        letter-spacing: 5px;
+                        padding-bottom: 30px;
+                    }
+                    .ingredient{
+                        font-size: 20px;
+                        font-family: Caveat-R;
+                        letter-spacing: 4px;
+                    }
+                }
+                .instructions-list{
+                    // background-color:darkgrey;
+                    height: 300px;
+                    width: 1050px;
+                    padding-left: 35px;
+                    .instructions-list-title{
+                        font-size: 25px;
+                        font-family: Lato-R;
+                        letter-spacing: 5px;
+                        padding-bottom: 30px;
+                    }
+                    .instruction{
+                        font-size: 20px;
+                        font-family: Caveat-R;
+                        letter-spacing: 4px;
+                    }
+                }
+                button{
+                    height: 42px;
+                    width: 127px;
+                    background-color: #FFD972;
+                    border-radius: 26px;
+                    text-align: center;
+                    box-shadow: 0px 10px 6px #00000029;
+                    border: none;
+                    margin-left: 35px;
+                }
+            }
+        }
+        .footer-container{
+            height: 1342px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}

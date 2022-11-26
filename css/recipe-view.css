@@ -1,0 +1,83 @@
+.create {
+  height: 1687px;
+}
+.create .create-hero {
+  height: 1687px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.create .create-hero .create-hero-container {
+  position: absolute;
+  width: 100%;
+  height: 1687px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.create .create-hero .create-hero-container .create-content-container {
+  height: 1400px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.create .create-hero .create-hero-container .create-content-container .create-title {
+  font-family: Caveat-B;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+.create .create-hero .create-hero-container .create-content-container input {
+  width: 980px;
+  height: 30px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-family: Lato-R;
+}
+.create .create-hero .create-hero-container .create-content-container .enter-ingredients {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.create .create-hero .create-hero-container .create-content-container .enter-instructions {
+  font-size: 20px;
+  font-family: Lato-R;
+  letter-spacing: 2px;
+  margin-top: 135px;
+}
+.create .create-hero .create-hero-container .create-content-container .createRecipe {
+  height: 52px;
+  width: 422px;
+  background-color: #EFA7A7;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  font-size: 25px;
+  font-family: Caveat-R;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.create .create-hero .footer-container {
+  height: 1667px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
